@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* AgriSmart Design System - Agricultural Technology Theme */
+
+@layer base {
+  :root {
+    /* Forest Green Primary */
+    --primary: 142 55% 28%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Warm Earth Background */
+    --background: 45 30% 97%;
+    --foreground: 142 30% 15%;
+
+    /* Cards with soft cream */
+    --card: 0 0% 100%;
+    --card-foreground: 142 30% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 142 30% 15%;
+
+    /* Golden Accent */
+    --secondary: 42 87% 55%;
+    --secondary-foreground: 142 30% 15%;
+
+    /* Soft sage muted */
+    --muted: 142 15% 92%;
+    --muted-foreground: 142 15% 45%;
+
+    /* Fresh green accent */
+    --accent: 142 40% 90%;
+    --accent-foreground: 142 55% 25%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 142 20% 88%;
+    --input: 142 20% 88%;
+    --ring: 142 55% 28%;
+
+    --radius: 0.75rem;
+
+    /* Custom AgriSmart Colors */
+    --agri-forest: 142 55% 28%;
+    --agri-sage: 142 30% 75%;
+    --agri-gold: 42 87% 55%;
+    --agri-earth: 28 40% 35%;
+    --agri-cream: 45 30% 97%;
+    --agri-leaf: 120 45% 45%;
+    --agri-water: 200 70% 50%;
+    --agri-sun: 45 95% 60%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(142 55% 28%) 0%, hsl(142 40% 38%) 50%, hsl(120 45% 35%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(42 87% 55%) 0%, hsl(35 90% 50%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(45 30% 98%) 100%);
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(142 30% 15% / 0.1);
+    --shadow-card: 0 8px 32px -8px hsl(142 30% 15% / 0.12);
+    --shadow-elevated: 0 16px 48px -12px hsl(142 30% 15% / 0.18);
+
+    /* Sidebar */
+    --sidebar-background: 142 25% 12%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 42 87% 55%;
+    --sidebar-primary-foreground: 142 30% 15%;
+    --sidebar-accent: 142 30% 20%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 142 20% 20%;
+    --sidebar-ring: 42 87% 55%;
+  }
+
+  .dark {
+    --background: 142 25% 8%;
+    --foreground: 45 30% 95%;
+
+    --card: 142 25% 12%;
+    --card-foreground: 45 30% 95%;
+
+    --popover: 142 25% 12%;
+    --popover-foreground: 45 30% 95%;
+
+    --primary: 142 50% 45%;
+    --primary-foreground: 142 30% 10%;
+
+    --secondary: 42 80% 50%;
+    --secondary-foreground: 142 30% 10%;
+
+    --muted: 142 20% 18%;
+    --muted-foreground: 142 15% 65%;
+
+    --accent: 142 25% 20%;
+    --accent-foreground: 142 40% 85%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 142 20% 20%;
+    --input: 142 20% 20%;
+    --ring: 142 50% 45%;
+
+    --sidebar-background: 142 30% 6%;
+    --sidebar-foreground: 45 30% 95%;
+    --sidebar-primary: 42 80% 50%;
+    --sidebar-primary-foreground: 142 30% 10%;
+    --sidebar-accent: 142 25% 15%;
+    --sidebar-accent-foreground: 45 30% 95%;
+    --sidebar-border: 142 20% 15%;
+    --sidebar-ring: 42 80% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient-hero {
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-gradient-gold {
+    background: var(--gradient-gold);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out forwards;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -47,22 +47,24 @@ By leveraging intelligent automation and data-driven insights, FarmConnect enhan
 ---
 
 ### System Architecture
-![System Architecture](https://github.com/<<yourusername>>/FarmConnect/assets/your-image-id/system-architecture.png)
+<img width="1024" height="1024" alt="Gemini_Generated_Image_y3b7sgy3b7sgy3b7" src="https://github.com/user-attachments/assets/3f942f1d-2540-4ab4-b24e-155ed6564574" />
 
 ---
 
 ### Output
 
-#### Output 1 – Farmer Dashboard
-![Dashboard](https://github.com/<<yourusername>>/FarmConnect/assets/your-image-id/dashboard.png)
+#### Output 1 
 
-#### Output 2 – Crop Prediction and Disease Detection
-![Prediction](https://github.com/<<yourusername>>/FarmConnect/assets/your-image-id/crop-prediction.png)
+<img width="1919" height="967" alt="Screenshot 2026-02-02 123117" src="https://github.com/user-attachments/assets/3df9528d-8d70-45d0-b293-04633c841cc1" />
 
-**Crop Prediction Accuracy:** 94.8%  
-**Disease Detection Accuracy:** 96.2%
+#### Output 2 
+<img width="1919" height="969" alt="Screenshot 2026-02-02 123136" src="https://github.com/user-attachments/assets/7a9dc965-965a-49e2-948a-83c0442f3238" />
 
-> Note: Performance metrics may vary depending on dataset quality and environmental conditions.
+#### Output 3 
+<img width="1919" height="971" alt="Screenshot 2026-02-02 123146" src="https://github.com/user-attachments/assets/ab471aeb-4e3f-4bbf-850c-c2fe9219225c" />
+
+#### Output 4 
+<img width="1919" height="967" alt="Screenshot 2026-02-02 123259" src="https://github.com/user-attachments/assets/df263745-f9db-48cc-bd62-66e2f8234b12" />
 
 ---
 
